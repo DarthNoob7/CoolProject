@@ -5,7 +5,7 @@ public class PlayerController : MonoBehaviour {
 	public float speed = 200;
 	public float xVelocity;
 	public float yVelocity;
-	public bool canJump = true;
+	public float jumps = 1;
 	// Use this for initialization
 	void Start () {
 		
@@ -13,12 +13,11 @@ public class PlayerController : MonoBehaviour {
 	//GetCompononet<Rigidbody>().AddForce(asdf)
 	// Update is called once per frame
 	void FixedUpdate () {
-
+		print (jumps);
 		float horizontal = Input.GetAxis ("Horizontal");
-		//float vertical;
-		if (Input.GetKeyDown ("space") && canJump == true) {
-			canJump = false;
+		if (Input.GetKeyDown("space") && jumps > 0) {
 			GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 7), ForceMode2D.Impulse);
+			jumps--;
 		}
 
 
@@ -40,10 +39,18 @@ public class PlayerController : MonoBehaviour {
 
 	}
 	
-	void onTriggerEnter(Collider other){
+	void onTriggerEnter2D(Collider2D other){
 		if (other.gameObject.tag == "Ground"){
-			canJump = true;
+			print ("PLEASE WORK");
+			jumps++;
 		}
-	//		
 	}
+	void OnTriggerExit2D(Collider2D other)
+	{print ("AHHHH");
+	}
+	void OnTriggerStay2D(Collider2D other)
+	{print ("AHHHHHH");
+		jumps = 1;
+	}
+
 }
