@@ -186,6 +186,7 @@ MonoBehaviour:
   speed: 1000
   xVelocity: 0
   yVelocity: 0
+  canJump: 0
 --- !u!1001 &511655124
 Prefab:
   m_ObjectHideFlags: 0
