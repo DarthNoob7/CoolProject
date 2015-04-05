@@ -66,6 +66,7 @@ public class PlayerController : MonoBehaviour {
 		if (transform.position.y < a || transform.position.y > b) {
 			print ("YOU LOSE YOOOOOO");
 			transform.position= new Vector2(theX,theY);
+			GetComponent<Rigidbody2D> ().velocity = new Vector2(0,0);
 		}
 	}
 
