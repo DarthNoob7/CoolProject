@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
 		theX = transform.position.x;
 		theY = transform.position.y;
 	}
@@ -54,6 +55,7 @@ public class PlayerController : MonoBehaviour {
 				
 				
 				GetComponent<Rigidbody2D> ().AddForce (movemen * speed * Time.deltaTime);
+				destroyHero (-50, 50);
 			}
 
 		}
@@ -95,6 +97,9 @@ public class PlayerController : MonoBehaviour {
 		}
 		if (other.gameObject.tag == "Door" && Application.loadedLevelName == "Level2") {
 			winThings ("Level3");
+		}
+		if (other.gameObject.tag == "Door" && Application.loadedLevelName == "Level3") {
+			winThings ("endScreen");
 		}
 
 	}
