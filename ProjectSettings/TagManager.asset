@@ -8,6 +8,7 @@ TagManager:
   - Zone
   - Enemy
   - Door
+  - Lava
   layers:
   - Default
   - TransparentFX
