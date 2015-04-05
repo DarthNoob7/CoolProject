@@ -1198,7 +1198,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 440704, guid: 8f71e330931f25c41b3cca63972fdd3d, type: 2}
       propertyPath: m_LocalScale.x
-      value: 2.48074007
+      value: 2.17064762
       objectReference: {fileID: 0}
     - target: {fileID: 109370, guid: 8f71e330931f25c41b3cca63972fdd3d, type: 2}
       propertyPath: m_TagString
@@ -4722,7 +4722,7 @@ PolygonCollider2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1482394271}
   m_Enabled: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 4053e287c3d94a149a978f3b326a58de, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
