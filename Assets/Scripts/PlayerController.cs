@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour {
 			if (Application.loadedLevelName == "Main") {
 				print (jumps);
 				float horizontal = Input.GetAxis ("Horizontal");
-				if (Input.GetKeyDown ("space") && jumps > 0) {
+				if (Input.GetKeyDown ("up") && jumps > 0) {
 					GetComponent<Rigidbody2D> ().AddForce (new Vector2 (0, 5), ForceMode2D.Impulse);
 					jumps--;
 				}
