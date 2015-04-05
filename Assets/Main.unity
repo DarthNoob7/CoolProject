@@ -550,8 +550,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 500
-  xVelocity: 0
-  yVelocity: 0
+  theX: 0
+  theY: 0
   jumps: 1
 --- !u!95 &247635099
 Animator:
@@ -1382,6 +1382,18 @@ Prefab:
     - target: {fileID: 6151834, guid: b5c6bd1fda8acbb44bb74dbde24e4785, type: 2}
       propertyPath: m_Size.y
       value: 2.33000016
+      objectReference: {fileID: 0}
+    - target: {fileID: 478492, guid: b5c6bd1fda8acbb44bb74dbde24e4785, type: 2}
+      propertyPath: m_LocalScale.x
+      value: .87651062
+      objectReference: {fileID: 0}
+    - target: {fileID: 478492, guid: b5c6bd1fda8acbb44bb74dbde24e4785, type: 2}
+      propertyPath: m_LocalScale.y
+      value: .876510262
+      objectReference: {fileID: 0}
+    - target: {fileID: 478492, guid: b5c6bd1fda8acbb44bb74dbde24e4785, type: 2}
+      propertyPath: m_LocalScale.z
+      value: .876510262
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5c6bd1fda8acbb44bb74dbde24e4785, type: 2}
@@ -2620,7 +2632,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 440704, guid: 8f71e330931f25c41b3cca63972fdd3d, type: 2}
       propertyPath: m_LocalScale.x
-      value: .772698402
+      value: .907920301
       objectReference: {fileID: 0}
     - target: {fileID: 21263578, guid: 8f71e330931f25c41b3cca63972fdd3d, type: 2}
       propertyPath: m_SortingLayerID
