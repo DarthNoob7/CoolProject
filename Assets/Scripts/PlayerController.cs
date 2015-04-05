@@ -3,14 +3,15 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour {
 	public float speed = 100;
-	public float xVelocity;
-	public float yVelocity;
+	public float theX;
+	public float theY;
 	public float jumps = 1;
 
 
 	// Use this for initialization
 	void Start () {
-		
+		theX = transform.position.x;
+		theY = transform.position.y;
 	}
 	//GetCompononet<Rigidbody>().AddForce(asdf)
 	// Update is called once per frame
@@ -35,22 +36,28 @@ public class PlayerController : MonoBehaviour {
 				//yVelocity = vertical * Time.deltaTime * speed;
 				//Vector3 position = new Vector3 (horizontal * Time.deltaTime * speed, vertical * Time.deltaTime * speed, 0);
 				//transform.position = transform.position + position;
+				destroyHero (-10, 60);
 			}else if(Application.loadedLevelName == "Level2") {
 				float horizontal = Input.GetAxis ("Horizontal");
 				float vertical = Input.GetAxis ("Vertical");
 				Vector3 movement = new Vector3 (horizontal, vertical, 0);
 				
 				GetComponent<Rigidbody2D> ().AddForce (movement * speed * Time.deltaTime);
+				destroyHero (-100, 100);
 			}
-				if (transform.position.y < -10 || transform.position.y > 60) {
-					print ("YOU LOSE YOOOOOO");
-					Object.Destroy (this.gameObject);
-				}
+
 
 		}
 		
 	}
-	
+
+	void destroyHero(float a, float b){
+		if (transform.position.y < a || transform.position.y > b) {
+			print ("YOU LOSE YOOOOOO");
+			transform.position= new Vector2(theX,theY);
+		}
+	}
+
 	void onTriggerEnter2D(Collider2D other){
 		if (other.gameObject.tag == "Ground"){
 			print ("PLEASE WORK");
