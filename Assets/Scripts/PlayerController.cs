@@ -44,12 +44,21 @@ public class PlayerController : MonoBehaviour {
 				
 				GetComponent<Rigidbody2D> ().AddForce (movement * speed * Time.deltaTime);
 				destroyHero (-100, 100);
+			}else if(Application.loadedLevelName == "Level3"){
+				float horizontal = Input.GetAxis ("Horizontal");
+				if (Input.GetKeyDown ("down") && jumps > 0) {
+					GetComponent<Rigidbody2D> ().AddForce (new Vector2 (0, 5), ForceMode2D.Impulse);
+					jumps--;
+				}
+				Vector3 movemen = new Vector3 ( -1 * horizontal, 0, 0);
+				
+				
+				GetComponent<Rigidbody2D> ().AddForce (movemen * speed * Time.deltaTime);
 			}
 
-
 		}
-		
-	}
+	}	
+	
 
 	void destroyHero(float a, float b){
 		if (transform.position.y < a || transform.position.y > b) {
