@@ -6,6 +6,8 @@ public class PlayerController : MonoBehaviour {
 	public float xVelocity;
 	public float yVelocity;
 	public float jumps = 1;
+
+
 	// Use this for initialization
 	void Start () {
 		
@@ -34,6 +36,7 @@ public class PlayerController : MonoBehaviour {
 		if (transform.position.y < -10) {
 			print ("YOU LOSE YOOOOOO");
 			Destroy (this);
+
 		}
 
 
@@ -62,6 +65,16 @@ public class PlayerController : MonoBehaviour {
 		if (other.gameObject.tag == "Enemy") {
 		
 		}
+		if (other.gameObject.tag == "Door") {
+			winThings();
+		}
+
+	}
+
+	void winThings(){
+		print ("heey we won");
+		Application.LoadLevel ("Level2");
+
 	}
 
 	void OnCollisionStay2D(Collision2D other)

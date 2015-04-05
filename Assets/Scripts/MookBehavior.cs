@@ -17,6 +17,10 @@ public class MookBehavior : MonoBehaviour {
 	{
 		if (other.gameObject.tag == "Zone") {
 			speed = -speed;
+			Vector3 theScale = transform.localScale;
+			theScale.x *= -1;
+			transform.localScale = theScale;
+			//transform.rotation = new Vector3(0, 180, 0);
 		}
 
 		
