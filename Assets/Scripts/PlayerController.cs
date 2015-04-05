@@ -81,15 +81,18 @@ public class PlayerController : MonoBehaviour {
 		if (other.gameObject.tag == "Enemy") {
 		
 		}
-		if (other.gameObject.tag == "Door") {
-			winThings();
+		if (other.gameObject.tag == "Door" && Application.loadedLevelName == "Main") {
+			winThings("Level2");
+		}
+		if (other.gameObject.tag == "Door" && Application.loadedLevelName == "Level2") {
+			winThings ("Level3");
 		}
 
 	}
 
-	void winThings(){
+	void winThings(string nextLevel){
 		print ("heey we won");
-		Application.LoadLevel ("Level2");
+		Application.LoadLevel (nextLevel);
 
 	}
 
