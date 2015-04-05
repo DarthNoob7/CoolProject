@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour {
 		print (jumps);
 		float horizontal = Input.GetAxis ("Horizontal");
 		if (Input.GetKeyDown("space") && jumps > 0) {
-			GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 7), ForceMode2D.Impulse);
+			GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 5), ForceMode2D.Impulse);
 			jumps--;
 		}
 
@@ -46,11 +46,28 @@ public class PlayerController : MonoBehaviour {
 		}
 	}
 	void OnTriggerExit2D(Collider2D other)
-	{print ("AHHHH");
+	{
+		if (other.gameObject.tag == "Ground") {
+			jumps = 1;
+			print ("AHHHH");
+		}
+
 	}
 	void OnTriggerStay2D(Collider2D other)
-	{print ("AHHHHHH");
-		jumps = 1;
+	{
+		if (other.gameObject.tag == "Ground") {
+			jumps = 1;
+			print ("AHHHHHH");
+		}
+		if (other.gameObject.tag == "Enemy") {
+		
+		}
 	}
+
+	void OnCollisionStay2D(Collision2D other)
+	{
+
+	}
+
 
 }
