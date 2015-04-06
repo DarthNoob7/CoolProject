@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Door
   - Lava
+  - clone
   layers:
   - Default
   - TransparentFX

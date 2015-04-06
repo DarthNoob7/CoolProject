@@ -19,6 +19,10 @@ public class PlayerController : MonoBehaviour {
 	void FixedUpdate () {
 
 		if (this.gameObject != null) {
+		/*	if (Input.GetKeyDown ("R")){
+				transform.position= new Vector2(theX,theY);
+				GetComponent<Rigidbody2D> ().velocity = new Vector2(0,0);
+			}*/
 			if (Application.loadedLevelName == "Main") {
 				print (jumps);
 				float horizontal = Input.GetAxis ("Horizontal");
@@ -100,7 +104,11 @@ public class PlayerController : MonoBehaviour {
 			winThings ("Level3");
 		}
 		if (other.gameObject.tag == "Door" && Application.loadedLevelName == "Level3") {
-			winThings ("endScreen");
+			if(this.gameObject.tag == "clone"){
+				winThings ("endScreen2");
+			}else{
+				winThings ("endScreen");
+			}
 		}
 
 	}
