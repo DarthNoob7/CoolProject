@@ -310,7 +310,7 @@ GameObject:
   - 95: {fileID: 71589893}
   m_Layer: 0
   m_Name: Clone 4
-  m_TagString: Untagged
+  m_TagString: clone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -466,7 +466,7 @@ GameObject:
   - 95: {fileID: 114967745}
   m_Layer: 0
   m_Name: Clone 3
-  m_TagString: Untagged
+  m_TagString: clone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -714,7 +714,7 @@ GameObject:
   - 95: {fileID: 131571011}
   m_Layer: 0
   m_Name: Clone 5
-  m_TagString: Untagged
+  m_TagString: clone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2102,7 +2102,7 @@ GameObject:
   - 95: {fileID: 413130258}
   m_Layer: 0
   m_Name: Hero
-  m_TagString: Untagged
+  m_TagString: Hero
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2200,7 +2200,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 413130257}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -38.1300011, y: 18.2800007, z: 0}
+  m_LocalPosition: {x: -38.1199989, y: 18.3199997, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5676,6 +5676,14 @@ Prefab:
       propertyPath: m_SortingOrder
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 6147262, guid: 8f71e330931f25c41b3cca63972fdd3d, type: 2}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6147262, guid: 8f71e330931f25c41b3cca63972fdd3d, type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8f71e330931f25c41b3cca63972fdd3d, type: 2}
   m_IsPrefabParent: 0
@@ -5965,7 +5973,7 @@ GameObject:
   - 95: {fileID: 1572685515}
   m_Layer: 0
   m_Name: Clone 2
-  m_TagString: Untagged
+  m_TagString: clone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7786,7 +7794,7 @@ GameObject:
   - 95: {fileID: 1970291032}
   m_Layer: 0
   m_Name: Clone 6
-  m_TagString: Untagged
+  m_TagString: clone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7904,7 +7912,7 @@ GameObject:
   - 95: {fileID: 1970600863}
   m_Layer: 0
   m_Name: Clone 1
-  m_TagString: Untagged
+  m_TagString: clone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

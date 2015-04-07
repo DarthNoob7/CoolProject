@@ -10,6 +10,7 @@ TagManager:
   - Door
   - Lava
   - clone
+  - Hero
   layers:
   - Default
   - TransparentFX

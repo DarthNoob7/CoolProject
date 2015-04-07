@@ -467,7 +467,7 @@ GameObject:
   - 95: {fileID: 247635099}
   m_Layer: 0
   m_Name: Hero
-  m_TagString: Untagged
+  m_TagString: Hero
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -553,6 +553,7 @@ MonoBehaviour:
   theX: 0
   theY: 0
   jumps: 1
+  deaths: 0
 --- !u!95 &247635099
 Animator:
   serializedVersion: 3
@@ -2477,8 +2478,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1969839721}
+  - 114: {fileID: 1969839722}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Persistent Object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2496,6 +2498,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
+--- !u!114 &1969839722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1969839720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85ffc66ac5d82c048982018dea039002, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1980910803 stripped
 Transform:
   m_PrefabParentObject: {fileID: 495436, guid: ac74658fe61239d4186ce3f38fc5a72b, type: 2}
