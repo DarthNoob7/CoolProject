@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿//made by Carson Hu, Isabel Zhang, Brian Wong
+
+using UnityEngine;
 using System.Collections;
 
 public class PlayerController : MonoBehaviour {
@@ -99,7 +101,7 @@ public class PlayerController : MonoBehaviour {
 
 	void onTriggerEnter2D(Collider2D other){
 		if (other.gameObject.tag == "Ground"){
-			print ("PLEASE WORK");
+			print ("PLEASE WORK"); //jumps are whacky - this is intentional
 			jumps++;
 		}
 	}
@@ -107,7 +109,7 @@ public class PlayerController : MonoBehaviour {
 	{
 		if (other.gameObject.tag == "Ground") {
 			jumps = 1;
-			print ("AHHHH");
+			print ("AHHHH"); //test
 		}
 
 	}

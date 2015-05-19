@@ -553,7 +553,6 @@ MonoBehaviour:
   theX: 0
   theY: 0
   jumps: 1
-  deaths: 0
 --- !u!95 &247635099
 Animator:
   serializedVersion: 3
@@ -2509,6 +2508,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85ffc66ac5d82c048982018dea039002, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deaths: 0
 --- !u!4 &1980910803 stripped
 Transform:
   m_PrefabParentObject: {fileID: 495436, guid: ac74658fe61239d4186ce3f38fc5a72b, type: 2}
